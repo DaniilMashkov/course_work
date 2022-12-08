@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "course_work"
+version = "0.1.0"
+description = ""
+authors = ["DaniilMashkov <dankeeeez@gmail.com >"]
+readme = "README.md"
+packages = [{include = "main"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.0"
+pandas = "^1.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-sorted = 'scripts.sorted:input_args'
+get-banch = 'scripts.banch:input_args'
